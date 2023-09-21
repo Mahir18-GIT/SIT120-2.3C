@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Sample</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styles for screens smaller than 600px */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightgrey;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Responsive Web Design Sample</h1>
+        <p>This webpage adjusts its layout and styles based on the size of your viewport.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    </div>
+</body>
+</html>

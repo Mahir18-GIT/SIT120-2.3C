@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts Demonstration</title>
+</head>
+
+<body>
+
+<h1>JavaScript Concepts in Action</h1>
+
+<h3>Results:</h3>
+<div id="results"></div>
+
+<script>
+    // **String methods**
+    var str = "Hello, World!";
+    var results = "";
+
+    results += "Original String: " + str + "<br>";
+    results += "Uppercase: " + str.toUpperCase() + "<br>";
+    results += "Lowercase: " + str.toLowerCase() + "<br>";
+    results += "String Length: " + str.length + "<br>";
+    results += "Index of 'World': " + str.indexOf("World") + "<br>";
+    results += "Substring(0,5): " + str.substring(0,5) + "<br><br>";
+
+    // **Number methods**
+    var num = 123.45678;
+
+    results += "Original Number: " + num + "<br>";
+    results += "Rounded: " + Math.round(num) + "<br>";
+    results += "Fixed to 2 decimals: " + num.toFixed(2) + "<br>";
+    results += "Number to Exponential: " + num.toExponential() + "<br>";
+    results += "Number as String: " + num.toString() + "<br>";
+    results += "Absolute Value: " + Math.abs(-num) + "<br><br>";
+
+    // **Array methods**
+    var arr = ["Apple", "Banana", "Cherry", 100, 200];
+
+    results += "Original Array: " + arr + "<br>";
+    results += "Array Length: " + arr.length + "<br>";
+    results += "Pushed 'Orange': " + arr.push("Orange") + "<br>"; // Returns new array length
+    results += "New Array: " + arr + "<br>";
+    results += "Popped Element: " + arr.pop() + "<br>"; // Returns removed item
+    results += "Joined Array: " + arr.join(" - ") + "<br><br>";
+
+    // **Date methods**
+    var date = new Date();
+
+    results += "Today's Date: " + date + "<br>";
+    results += "Year: " + date.getFullYear() + "<br>";
+    results += "Month (0-based): " + date.getMonth() + "<br>";
+    results += "Date of Month: " + date.getDate() + "<br>";
+    results += "Day of Week (0=Sunday): " + date.getDay() + "<br><br>";
+
+    // **Function methods**
+    function greet(name) {
+        return "Hello, " + name + "!";
+    }
+    var farewell = function(message) {
+        return message;
+    }
+
+    results += "Greet function: " + greet("John") + "<br>";
+    results += "Farewell function: " + farewell("Goodbye!") + "<br><br>";
+
+    document.getElementById("results").innerHTML = results;
+</script>
+
+</body>
+</html>

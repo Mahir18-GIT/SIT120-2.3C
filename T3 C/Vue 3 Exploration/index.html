@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 Exploration</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-if and v-else -->
+        <div v-if="show">
+            This will be displayed if 'show' is true.
+        </div>
+        <div v-else>
+            This will be displayed if 'show' is false.
+        </div>
+
+        <!-- v-show -->
+        <div v-show="show">
+            This will always be in the DOM but will be hidden if 'show' is false.
+        </div>
+
+        <!-- v-for -->
+        <ul>
+            <li v-for="fruit in fruits" :key="fruit">{{ fruit }}</li>
+        </ul>
+
+        <!-- v-if with v-for -->
+        <ul>
+            <li v-for="fruit in fruits" v-if="fruit !== 'Banana'" :key="fruit">{{ fruit }}</li>
+        </ul>
+
+        <!-- Form Input Handlings with v-model -->
+        <input type="text" v-model="inputText" placeholder="Type something...">
+        <p>You typed: {{ inputText }}</p>
+    </div>
+
+    <!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3.0.0-rc.12/dist/vue.global.prod.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+

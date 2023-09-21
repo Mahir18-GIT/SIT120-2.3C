@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sample Page</title>
+    <style>
+        /* Base styles for all devices */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media query for tablets and above */
+        @media (min-width: 768px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        /* Media query for desktop and above */
+        @media (min-width: 1024px) {
+            body {
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Responsive Page</h1>
+    <p>This page changes its background color based on screen width.</p>
+    <img src="https://via.placeholder.com/400" alt="Sample Image">
+</body>
+</html>

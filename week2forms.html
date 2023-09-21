@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+
+        .formstyle{
+            background-color: antiquewhite;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            max-width: 70%;
+
+            margin: auto;
+            padding: 2dvh;
+        }
+        #idstyle{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="position: -webkit-sticky;">This is my survey form</h1>
+    
+        <form>
+            <label for="name">First name</label>
+            <input type="text" lastname="name">
+            
+            <br>
+
+            <label for="name">Last name</label>
+            <input type="text" lastname="name">
+            
+            <br>
+
+            <label for="name">E mail</label>
+            <input type="text" lastname="name">
+            
+            <br>
+
+            <label for="name">Contact Number</label>
+            <input type="number" lastname="name">
+
+            <div>
+                <select>
+
+                    <option selected disabled>Select an option</option>
+                    <option value="v1">First Option</option>
+                    <br>
+                    <option value="v2">Second Option</option>
+                    <br>
+                    <option value="v3">Third Option</option>
+                </select>
+                </fieldset>
+
+            </div>
+
+            <div>
+                <fieldset>
+                <h2>
+                    Please select relevent boxes:
+                </h2>
+                <label><input type="checkbox" name="player" />First option</label>
+                <br>
+                <label><input type="checkbox" name="player" />Second option</label>
+                <br>
+                <label><input type="checkbox" name="player" />Third option</label>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <textarea name="text" id="5" cols="30" rows="10">Please leave your reviews here:</textarea>
+                </fieldset>
+            </div>
+
+            <div>
+                <input type="submit" value="submit" />
+            </div>
+
+        </form>
+</body>
+</html>
