@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahir Seth-Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            text-decoration: none;
+            color: #333;
+        }
+
+        body {
+            background-image: url('https://wallpaperaccess.com/full/5652030.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            padding: 50px 10%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 40px 10%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-container {
+            display: none;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            main {
+                padding: 30px 5%;
+                margin: 20px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#employment">Employment</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <!-- Content of the "About Me" section -->
+        </section>
+
+        <section id="employment">
+            <h2>Employment</h2>
+            <div class="content-container" id="employment-content">
+                <!-- Employment content -->
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="content-container" id="education-content">
+                <!-- Education content -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="content-container" id="contact-content">
+                <!-- Contact content -->
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="content-container" id="skills-content">
+                <!-- Skills content -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mahir Seth</p>
+    </footer>
+
+    <script>
+        // Function to toggle content containers
+        function toggleContent(id) {
+            const contentContainer = document.getElementById(id);
+            if (contentContainer.style.display === "none" || contentContainer.style.display === "") {
+                contentContainer.style.display = "block";
+            } else {
+                contentContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
